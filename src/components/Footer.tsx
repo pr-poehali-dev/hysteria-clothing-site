@@ -7,10 +7,10 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
-            <h3 className="text-2xl font-bold mb-4">ShopHub</h3>
+            <h3 className="text-2xl font-bold mb-4">Hysteria</h3>
             <p className="text-slate-300 mb-4 max-w-md">
-              Современный интернет-магазин с широким ассортimentом качественных
-              товаров и быстрой доставкой по всей России.
+              Современный бренд одежды с уникальным дизайном и высоким
+              качеством. Быстрая доставка стильных коллекций по всей России.
             </p>
             <div className="flex space-x-4">
               <a
@@ -115,7 +115,7 @@ const Footer = () => {
 
         <div className="border-t border-slate-700 mt-8 pt-8 flex flex-col sm:flex-row justify-between items-center">
           <p className="text-slate-400 text-sm">
-            © 2024 ShopHub. Все права защищены.
+            © 2024 Hysteria. Все права защищены.
           </p>
           <div className="flex space-x-6 mt-4 sm:mt-0">
             <a

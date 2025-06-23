@@ -4,13 +4,15 @@ const Hero = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-slate-900 mb-6">
-            Онлайн магазин
-            <span className="text-purple-600 block">нового поколения</span>
+            Hysteria
+            <span className="text-purple-600 block">
+              бренд одежды нового уровня
+            </span>
           </h1>
 
           <p className="text-xl text-slate-600 mb-8 max-w-3xl mx-auto">
-            Откройте для себя уникальные товары с доставкой по всей стране.
-            Качество, стиль и доступные цены в одном месте.
+            Откройте для себя уникальную коллекцию стильной одежды. Высокое
+            качество, модные тренды и доступные цены в одном месте.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
