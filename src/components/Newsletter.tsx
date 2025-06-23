@@ -12,19 +12,14 @@ const Newsletter = () => {
   };
 
   return (
-    <section className="bg-gradient-to-r from-purple-600 to-indigo-600 py-16">
+    <section className="bg-white py-16 border-t border-gray-100">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div className="flex justify-center mb-6">
-          <Icon name="Mail" size={48} className="text-white" />
-        </div>
-
-        <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-          Будьте в курсе новинок
+        <h2 className="text-2xl md:text-3xl font-bold text-black mb-4">
+          Подписка на новости
         </h2>
 
-        <p className="text-xl text-purple-100 mb-8 max-w-2xl mx-auto">
-          Подпишитесь на нашу рассылку и получайте информацию о скидках, новых
-          товарах и эксклюзивных предложениях
+        <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
+          Получайте информацию о новых коллекциях и специальных предложениях
         </p>
 
         <form
@@ -35,21 +30,17 @@ const Newsletter = () => {
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            placeholder="Ваш email адрес"
-            className="flex-1 px-4 py-3 rounded-lg border-0 focus:ring-2 focus:ring-purple-300"
+            placeholder="Email адрес"
+            className="flex-1 px-4 py-3 border border-gray-200 focus:outline-none focus:border-black"
             required
           />
           <button
             type="submit"
-            className="bg-white text-purple-600 px-6 py-3 rounded-lg font-semibold hover:bg-purple-50 transition-colors"
+            className="bg-black text-white px-6 py-3 font-medium hover:bg-gray-800 transition-colors"
           >
             Подписаться
           </button>
         </form>
-
-        <p className="text-purple-200 text-sm mt-4">
-          Мы не передаем данные третьим лицам и не рассылаем спам
-        </p>
       </div>
     </section>
   );

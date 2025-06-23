@@ -19,51 +19,32 @@ const ProductCard = ({
   isNew,
 }: ProductCardProps) => {
   return (
-    <div className="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden">
+    <div className="bg-white border border-gray-100 hover:border-gray-200 transition-colors duration-200 overflow-hidden">
       <div className="relative">
-        <img src={image} alt={name} className="w-full h-48 object-cover" />
+        <img src={image} alt={name} className="w-full h-80 object-cover" />
         {isNew && (
-          <span className="absolute top-3 left-3 bg-purple-600 text-white px-2 py-1 rounded-full text-xs font-semibold">
-            Новинка
+          <span className="absolute top-3 left-3 bg-black text-white px-2 py-1 text-xs font-medium">
+            НОВИНКА
           </span>
         )}
-        <button className="absolute top-3 right-3 bg-white/80 hover:bg-white p-2 rounded-full transition-colors">
-          <Icon name="Heart" size={16} />
-        </button>
       </div>
 
       <div className="p-4">
-        <h3 className="font-semibold text-slate-900 mb-2 line-clamp-2">
+        <h3 className="font-medium text-black text-sm mb-2 uppercase tracking-wide">
           {name}
         </h3>
 
-        <div className="flex items-center mb-2">
-          {[...Array(5)].map((_, i) => (
-            <Icon
-              key={i}
-              name="Star"
-              size={14}
-              className={
-                i < rating ? "text-yellow-400 fill-current" : "text-gray-300"
-              }
-            />
-          ))}
-          <span className="text-sm text-slate-500 ml-1">({rating})</span>
-        </div>
+        <p className="text-xs text-gray-600 mb-3">
+          Отправка в течении 4-8 дней
+        </p>
 
-        <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <span className="text-lg font-bold text-slate-900">{price} ₽</span>
-            {originalPrice && (
-              <span className="text-sm text-slate-500 line-through">
-                {originalPrice} ₽
-              </span>
-            )}
-          </div>
-
-          <button className="bg-purple-600 text-white p-2 rounded-lg hover:bg-purple-700 transition-colors">
-            <Icon name="ShoppingCart" size={16} />
-          </button>
+        <div className="flex items-center space-x-2">
+          <span className="text-sm font-medium text-black">{price} р.</span>
+          {originalPrice && (
+            <span className="text-sm text-gray-400 line-through">
+              {originalPrice} р.
+            </span>
+          )}
         </div>
       </div>
     </div>
